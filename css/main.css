@@ -150,7 +150,6 @@ span {
 }
 .stores .country:first-child {
 	background-image: url(../img/usa_bg.jpg);
-	border-radius: 20px 0 0 20px;
 }
 .stores .country:nth-child(2) {
 	background-image: url(../img/uk_bg.jpg);
@@ -160,7 +159,6 @@ span {
 }
 .stores .country:nth-child(4) {
 	background-image: url(../img/pl_bg.jpg);
-	border-radius: 0 20px 20px 0;
 }
 .layer {
 	display: none;
@@ -177,6 +175,7 @@ span {
 	background-color: rgba(246,246,246,0.7);
 	text-align: center;
 	text-transform: uppercase;
+	transition: 0.5s;
 }
 .caption_hover {
 	background-color: rgba(49,49,49,0.7);

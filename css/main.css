@@ -2,7 +2,7 @@
 
 /*  SECTIONS  */
 
-.section {
+.sec {
 	clear: both;
 	padding: 0;
 	margin: 0;
@@ -128,12 +128,12 @@ span {
 	color: #ff3f4a;
 }
 .stores {
-	height: 100%;
 	text-align: center;
 	background: url(../img/bg_stores.jpg) no-repeat center;
 	background-size: cover;
+	position: relative;
 }
-.stores .section {
+.stores .sec {
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
@@ -183,7 +183,7 @@ span {
 }
 .close {
 	display: none;
-	position: fixed;
+	position: absolute;
 	top: 5%;
 	right: 5%;
 	cursor: pointer;
@@ -193,7 +193,7 @@ span {
 .table-fixed {
 	display: none;
 	width: 80%;
-	position: fixed;
+	position: absolute;
 	left: 10%;
 	top: 5%;
 	background-color: transparent;
@@ -207,14 +207,14 @@ span {
 	overflow-y: auto;
 }
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0,0,0,0.6);
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.6);
 }
 .brands a {
 	display: inline-block;
@@ -259,12 +259,12 @@ span {
 .note {
 	min-height: 100%;
 }
-.order .section,
-.note .section {
+.order .sec,
+.note .sec {
 	width: 90%;
 	margin: 4em auto;
 }
-.sizes .section {
+.sizes .sec {
 	margin: 4em auto;
 }
 .order .col {
@@ -302,6 +302,7 @@ span {
 	padding-bottom: 5em;
 	background: url(../img/bg_sizes.jpg) no-repeat center;
 	background-size: cover;
+	position: relative;
 }
 .sizes h2 {
 	color: #fff;
@@ -395,7 +396,7 @@ td {
 .note .span_2_of_2 {
 	width: 90%;
 }
-.note .section:last-child {
+.note .sec:last-child {
 	margin-bottom: 0;
 }
 .footer {
@@ -421,7 +422,7 @@ td {
 	padding-top: 3em;
 	padding-bottom: 3em;
 }
-.articles .section {
+.articles .sec {
 	width: 95%;
 	margin: 0 auto;
 }
@@ -474,16 +475,16 @@ a {
 	color: #000;
 	font-weight: 400;
 }
-		.articles .post a {
-	color: #000;
-	}
-		.articles .post .text-right a {
-	margin-left: 5%;
-	}
-		.articles .post h2 {
-		font-size: 4em;
-		color: #fff;
-	}
+	.articles .post a {
+color: #000;
+}
+	.articles .post .text-right a {
+margin-left: 5%;
+}
+	.articles .post h2 {
+	font-size: 4em;
+	color: #fff;
+}
 .articles .border {
 	width: 35%;
 	margin-left: 0;
@@ -542,7 +543,7 @@ a {
 	.large a {
 		width: 11.5em;
 	}
-	.order .section {
+	.order .sec {
 		width: 100%;
 	}
 	.order .col {
@@ -556,7 +557,7 @@ a {
 	.sizes .col-full div {
 		left: 46.5%;
 	}
-	.note .section {
+	.note .sec {
 		width: 100%;
 	}
 	.note .col {
@@ -595,7 +596,7 @@ a {
 	.sizes .col-full div {
 		left: 46.5%;
 	}
-	.note .section {
+	.note .sec {
 		width: 100%;
 	}
 	.note .col {

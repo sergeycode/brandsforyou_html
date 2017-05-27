@@ -1,18 +1,13 @@
 var main = function(){
 
+	// fullpage.js
+	$('#fullpage').fullpage({
+		verticalCentered: false
+	});
 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop() > 1){
-    		$('.header').addClass('fixed',400);
-  	    }
-  	    else {
-    		$('.header').removeClass('fixed',400);
-  	    }
-    });
-
-    // Button click to scroll
+    // Button click to scroll with fullpage.js
     $('.main .btn').click(function() {
-        $('html,body').animate({'scrollTop' : $('.main').next().offset().top -100},300);
+				$.fn.fullpage.moveSectionDown();
     });
 
 	//Hover effect
@@ -26,14 +21,15 @@ var main = function(){
     $('.country.click').click(function() {
         var i = $(this).index();
         $('.brands').eq(i).fadeIn(400);
-        $('.close, .overlay').fadeIn(100);
+        $('.stores .close, .stores .overlay').fadeIn(100);
         $('html').css('overflow-y','hidden');
+				// $('body').css('overflow-y','hidden');
     });
     //Tables expand
     $('.type').click(function() {
         var i = $(this).parent().index();
         $('.table-fixed').eq(i).fadeIn(400);
-        $('.close, .overlay').fadeIn(100);
+        $('.sizes .close, .sizes .overlay').fadeIn(100);
         $('html').css('overflow-y','hidden');
     });
     //Close expand

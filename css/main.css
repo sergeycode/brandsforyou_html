@@ -130,6 +130,8 @@ body {
 .main {
 	height: 110%;
 	color: #fff;
+	background: url(../img/bg.jpg) no-repeat center;
+	background-size: cover;
 }
 .main .wrapper {
 	overflow: hidden;
@@ -274,6 +276,10 @@ span {
 .brands a:hover {
     background-color: #383838;
 }
+.order {
+	background: url(../img/bg_order.jpg) no-repeat center;
+	background-size: cover;
+}
 .order h2.uppercase {
 	margin-top: 15em;
 }
@@ -336,6 +342,8 @@ span {
 }
 .sizes {
 	padding-bottom: 5em;
+	background: url(../img/bg_sizes.jpg) no-repeat center;
+	background-size: cover;
 }
 .sizes h2 {
 	color: #fff;
@@ -412,6 +420,10 @@ td {
 .sizes .col-full {
 	width: 50%;
 	margin: 0 auto;
+}
+.note {
+	background: url(../img/bg_note.jpg) no-repeat center;
+	background-size: cover;
 }
 .note ul,
 .sizes ul {
